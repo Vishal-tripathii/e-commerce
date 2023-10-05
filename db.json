@@ -1,0 +1,124 @@
+{
+  "seller": [
+    {
+      "name": "name1",
+      "email": "email1",
+      "password": "password1",
+      "id": 1
+    },
+    {
+      "name": "name2",
+      "email": "email2",
+      "password": "password2",
+      "id": 2
+    },
+    {
+      "name": "name3",
+      "email": "email3",
+      "password": "password3",
+      "id": 3
+    },
+    {
+      "name": "name4",
+      "email": "email4",
+      "password": "password4",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "name5",
+      "email": "email5",
+      "password": "password5",
+      "id": 6
+    },
+    {
+      "name": "name7",
+      "email": "email7",
+      "password": "password7",
+      "id": 7
+    },
+    {
+      "name": "Vishal",
+      "email": "Tripathi",
+      "password": "@123",
+      "id": 8
+    },
+    {
+      "name": "d",
+      "email": "d",
+      "password": "d",
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "name": "Product A",
+      "price": "50",
+      "category": "Electronics",
+      "color": "Black",
+      "description": "A high-quality electronic product.",
+      "id": 1
+    },
+    {
+      "name": "Product B",
+      "price": "30",
+      "category": "Home Appliances",
+      "color": "White",
+      "description": "An efficient home appliance.",
+      "id": 2
+    },
+    {
+      "name": "Product C",
+      "price": "25",
+      "category": "Clothing",
+      "color": "Blue",
+      "description": "A stylish clothing item.",
+      "id": 3
+    },
+    {
+      "name": "Product D",
+      "price": "80",
+      "category": "Furniture",
+      "color": "Brown",
+      "description": "A durable piece of furniture.",
+      "id": 4
+    },
+    {
+      "name": "Product E",
+      "price": "15",
+      "category": "Toys",
+      "color": "Red",
+      "description": "A fun toy for kids.",
+      "id": 5
+    },
+    {
+      "name": "Product F",
+      "price": "70",
+      "category": "Kitchen Appliances",
+      "color": "Stainless Steel",
+      "description": "A modern kitchen appliance.",
+      "id": 6
+    },
+    {
+      "name": "Product G",
+      "price": "40",
+      "category": "Sports Equipment",
+      "color": "Green",
+      "description": "Quality sports gear.",
+      "id": 7
+    },
+    {
+      "name": "Product H",
+      "price": "120",
+      "category": "Beauty",
+      "color": "Pink",
+      "description": "A premium beauty product.",
+      "id": 8
+    }
+  ]
+}
