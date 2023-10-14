@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+a {
+    cursor: pointer;
+}
+.common-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+
+}
+.form-input {
+    height: 35px;
+    margin-bottom: 20px;
+    border: 1px solid blueviolet;
+    padding-left: 15px;
+    color: blueviolet;
+}
+.form-button {
+    height: 35px;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    margin: 5px;
+}
+.message-p {
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

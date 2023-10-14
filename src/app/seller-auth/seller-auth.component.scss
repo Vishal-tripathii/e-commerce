@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+input {
+    height: 35px;
+    margin-bottom: 14px;
+    padding-left: 10px;
+    border: 1px solid blueviolet;
+    color: blue;
+}
+
+button {
+    padding: 3%;
+    color: blue;
+    border-radius: 10px;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.errormsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+   
+}
