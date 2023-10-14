@@ -56,4 +56,9 @@ export class HeaderComponent implements OnInit {
       this.router.navigate([`search/${queryData}`]);
       
     }
+    redirectToDetail(id: number) {
+      console.log("touched");
+      
+      this.router.navigate(['/product-details/'+id])
+    }
 }
