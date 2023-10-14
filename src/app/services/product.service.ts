@@ -19,7 +19,28 @@ export class ProductService {
    return this.http.get<product[]>('http://localhost:3000/products'); // well call this servic in seller home
    // here get api is of product type array so we have to mention it
   }
-   deleteList(id: NumberSymbol) {
+   deleteList(id: Number) {
     return this.http.delete<product[]>(`http://localhost:3000/products/${id}`) // this is to delelre the product dynamically
+   }
+
+   getProduct(id: string) {
+    return this.http.get<product>(`http://localhost:3000/products/${id}`) // we are getting single product so avoid using [] in get type
+   }
+
+   updateProduct(product: product) {
+    return this.http.put<product>(`http://localhost:3000/products/${product.id}`, product)
+   }
+
+   popularProducts() {
+    return this.http.get<product[]>('http://localhost:3000/products?_limit=4'); 
+   }
+
+   trendyProducts() {
+    return this.http.get<product[]>('http://localhost:3000/products?_limit=18'); 
+
+   }
+
+   searchProducts(query: string) {
+    return this.http.get<product[]>(`http://localhost:3000/products?q=${query}`)
    }
 }

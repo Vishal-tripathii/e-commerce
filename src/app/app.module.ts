@@ -12,7 +12,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { authGuard } from './auth.guard';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon'
+import {MatIconModule} from '@angular/material/icon';
+import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SrarchComponent } from './srarch/srarch.component';
+import { SearchComponent } from './search/search.component';
+import { ProductDetailsComponent } from './product-details/product-details.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +26,11 @@ import {MatIconModule} from '@angular/material/icon'
     HeaderComponent,
     SellerAuthComponent,
     SellerHomeComponent,
-    SellerAddProductComponent
+    SellerAddProductComponent,
+    SellerUpdateProductComponent,
+    SrarchComponent,
+    SearchComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +38,8 @@ import {MatIconModule} from '@angular/material/icon'
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule
   ],
   providers: [authGuard],
   bootstrap: [AppComponent]

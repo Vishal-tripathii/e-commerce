@@ -21,7 +21,9 @@
                 <td>{{item.color}}</td>
                 <td>{{item.price}}</td>
                 <td>{{item.description}}</td>
-                <td (click)="deleteProduct(item.id)"><mat-icon>delete</mat-icon></td>
+                <td (click)="deleteProduct(item.id)"><mat-icon>delete</mat-icon>
+                    <a class="adjust-update-link" routerLink="/seller-update-product/{{item.id}}"><mat-icon>edit</mat-icon></a>
+                </td>
             </tr>
         </tbody>
     </table>
