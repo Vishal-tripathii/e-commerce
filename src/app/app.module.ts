@@ -15,9 +15,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SrarchComponent } from './srarch/srarch.component';
 import { SearchComponent } from './search/search.component';
-import { ProductDetailsComponent } from './product-details/product-details.component'
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { UserAuthComponent } from './user-auth/user-auth.component'
 
 @NgModule({
   declarations: [
@@ -28,9 +28,9 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     SellerHomeComponent,
     SellerAddProductComponent,
     SellerUpdateProductComponent,
-    SrarchComponent,
     SearchComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    UserAuthComponent
   ],
   imports: [
     BrowserModule,
