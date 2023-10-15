@@ -220,67 +220,66 @@
       "id": 17
     }
   ],
-  "users":[
+  "users": [
     {
-      "name": "Vishal Tripathi",
-      "email": "vishal.tripathi@gmail.com",
-      "password": "password",
+      "name": "d",
+      "email": "d",
+      "password": "d",
       "id": 1
     },
     {
-      "name": "Sunil Kumawat",
-      "email": "sunil@kumawat.com",
-      "password": "sunilpassword",
+      "name": "vishal",
+      "email": "vishal@test.com",
+      "password": "vishalpassword",
       "id": 2
     },
     {
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "password": "johndoe123",
+      "name": "d",
+      "email": "d",
+      "password": "d",
       "id": 3
     },
     {
-      "name": "Alice Smith",
-      "email": "alice.smith@example.com",
-      "password": "alicepass",
+      "name": "vishal",
+      "email": "vishal",
+      "password": "vishal",
       "id": 4
     },
     {
-      "name": "David Brown",
-      "email": "david.brown@example.com",
-      "password": "david123",
+      "name": "d",
+      "email": "d",
+      "password": "d",
       "id": 5
     },
     {
-      "name": "Sarah Johnson",
-      "email": "sarah.johnson@example.com",
-      "password": "sarahpass",
+      "name": "d",
+      "email": "d",
+      "password": "d",
       "id": 6
     },
     {
-      "name": "Robert Williams",
-      "email": "robert.williams@example.com",
-      "password": "robert123",
+      "name": "d",
+      "email": "d",
+      "password": "d",
       "id": 7
     },
     {
-      "name": "Emily Davis",
-      "email": "emily.davis@example.com",
-      "password": "emilypass",
+      "name": "d",
+      "email": "d",
+      "password": "d",
       "id": 8
     },
     {
-      "name": "Michael Wilson",
-      "email": "michael.wilson@example.com",
-      "password": "michaelpass",
+      "name": "d",
+      "email": "d",
+      "password": "d",
       "id": 9
     },
     {
-      "name": "Linda Garcia",
-      "email": "linda.garcia@example.com",
-      "password": "lindapass",
+      "name": "abc",
+      "email": "def",
+      "password": "ghi",
       "id": 10
     }
-]
-
+  ]
 }
