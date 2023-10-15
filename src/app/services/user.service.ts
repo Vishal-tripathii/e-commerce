@@ -20,5 +20,9 @@ export class UserService implements OnInit {
       }
     })
   }
-
+  userAuthReload() {
+    if(localStorage.getItem('user')) {
+      this.router.navigate(['/'])
+    }
+  }
 }

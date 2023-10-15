@@ -12,30 +12,43 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router, private product_srvc: ProductService) {}
   menuType: string = 'default';
   sellerName: string = '';
+  userName: string = '';
   searchResult: undefined | product[];
   ngOnInit() {
     this.router.events.subscribe((val: any) => {
-     if(val.url) {
-      if(localStorage.getItem('seller') && val.url.includes('seller')) {
-        this.menuType = 'seller';
-        if(localStorage.getItem('seller')) {
-          let sellerStore = localStorage.getItem('seller');
-          let sellerData = sellerStore && JSON.parse(sellerStore)[0];
-          this.sellerName = sellerData.name;
-          // console.log(this.sellerName);
-              
+      if (val.url) {
+        if (localStorage.getItem('seller') && val.url.includes('seller')) {
+         let sellerStore=localStorage.getItem('seller');
+         let sellerData =sellerStore && JSON.parse(sellerStore)[0];
+         this.sellerName=sellerData.name;
+          this.menuType = 'seller';
         }
-      }
-      else {
-        this.menuType = 'default'
-      }
-     }
-    });
+          else if(localStorage.getItem('user')){
+            let userStore = localStorage.getItem('user');
+            console.log("uerStore", userStore);
+            
+            let userData = userStore && JSON.parse(userStore);
+            console.log("userData", userData);
+
+            this.userName= userData.name;
+            console.log("username", this.userName);
+            
+            this.menuType='user';
+          }
+          else {
+            this.menuType = 'default';
+          }
+        }
+      });
   }
 
-    logout() {
+  sellerLogout() {
       localStorage.removeItem('seller');
       this.router.navigate(['/'])
+    }
+    userLogout() {
+      localStorage.removeItem('user');
+      this.router.navigate(['/user-auth'])
     }
 
     searchProduct(query: KeyboardEvent) {

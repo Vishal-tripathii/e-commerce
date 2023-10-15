@@ -10,19 +10,27 @@
         </ul>
     </div>
     <div [ngSwitch]="menuType">
-        <ul *ngSwitchCase="'default'">
-            <li><a routerLink="/seller-auth">Seller</a></li>
-            <li><a routerLink="/">Home</a></li>
+        <ul *ngSwitchCase="'default'" >
+            <li><a routerLink="seller-auth">Seller</a></li>
+            <li><a routerLink="">Home</a></li>
             <li><a routerLink="user-auth">Login/Sign-up</a></li>
-            <li><a routerLink="">Cart(0)</a></li>
-          
-        </ul>
-        <ul *ngSwitchCase="'seller'">
-            <li><a routerLink="/seller-add-product">Add product</a></li>
-            <li><a routerLink="/seller-home">list</a></li>
-            <li><a routerLink="" (click)="logout()">LogOut</a></li>
+            <li><a href="#">Cart(0)</a></li>
+          </ul>
+          <ul *ngSwitchCase="'user'" >
+            <li><a routerLink="seller-auth">Seller</a></li>
+            <li><a routerLink="">Home</a></li>
+            <li><a>{{userName | titlecase}}</a></li>
+            <li><a routerLink="my-orders" >My Orders</a></li>
+            <li><a (click)="userLogout()" >Logout</a></li>
+        
+            <!-- <li><a [routerLink]="cartItems>0?'cart-page':null">Cart({{cartItems}})</a></li> -->
+          </ul>
+          <ul *ngSwitchCase="'seller'" >
+            <li><a routerLink="seller-add-product">Add Product</a></li>
+            <li><a routerLink="seller-home">List</a></li>
+            <li><a>{{sellerName | titlecase}}</a></li>
+            <li><a (click)="sellerLogout()">Logout</a></li>
             <li><a href="#">{{sellerName | titlecase}}</a></li>
-       
-        </ul>
+          </ul>
     </div>
 </nav>
