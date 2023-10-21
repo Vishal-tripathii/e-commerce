@@ -29,6 +29,22 @@ a {
     justify-content: center;
     align-items: center;
 }
+.invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top:-20px
+  }
+  .enable {
+    background-color: green; /* Add your enabled styles here */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .disable {
+    background-color: gray; /* Add your disabled styles here */
+    color: #ccc;
+    cursor: not-allowed;
+  }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
