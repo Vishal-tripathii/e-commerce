@@ -1,21 +1,23 @@
-<div class="row product-details" *ngIf="getProductId">
+m<div class="row product-details" *ngIf="getProductData">
     <div class="col-sm-6">
-        <img class="product-image" src={{getProductId.image}} alt="id">
+        <img class="product-image" src={{getProductData.image}} alt="id">
     </div>
     <div class="col-sm-6">
         <div class="details">
             <h1>
-               Name: {{getProductId.name}}
+               Name: {{getProductData.name}}
             </h1>
-            <h3>Pric: {{getProductId.price}}</h3>
+            <h3>Pric: {{getProductData.price}}</h3>
             <div>
-                <h5 [style.backgroundColor]="getProductId.color" class="product-color"></h5> <!--For dynamic color-->
+                <h5 [style.backgroundColor]="getProductData.color" class="product-color"></h5> <!--For dynamic color-->
             </div>
             <div>
-                <h6>Category: {{getProductId.category}}</h6>
-                <h6>Description: {{getProductId.description}}</h6>
-                <button class="form-button">Add To Cart</button>
+                <h6>Category: {{getProductData.category}}</h6>
+                <h6>Description: {{getProductData.description}}</h6>
+                <button class="form-button" (click)="addToCart()">Add To Cart</button>
                 <button class="form-button">Buy NOW</button>
+                <button *ngIf="removeCart" class="form-button" (click)="removeToCart(getProductData.id)">Remove from Cart</button>
+                <button *ngIf="!removeCart" class="form-button" (click)="addToCart()">Add to Cart</button>
                 <div class="quantity-group">
                     <!-- <p>{{productQuantityMessage}}</p> -->
                     <button (click)="handleQuantity('minus')">-</button>

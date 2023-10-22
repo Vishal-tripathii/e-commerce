@@ -2,18 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { product } from '../data-type';
 import { ProductService } from '../services/product.service';
-import { ResourceLoader } from '@angular/compiler';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit { 
   constructor(private router: Router, private product_srvc: ProductService) {}
   menuType: string = 'default';
-  sellerName: string = '';
+  sellerName: string = ''; 
   userName: string = '';
   searchResult: undefined | product[];
+  cartItems = 0;
   ngOnInit() {
     this.router.events.subscribe((val: any) => {
       if (val.url) {
@@ -34,6 +34,14 @@ export class HeaderComponent implements OnInit {
         }
       }
     });
+
+    let cartData= localStorage.getItem('localCart');
+    if(cartData){
+      this.cartItems= JSON.parse(cartData).length; //this would up
+    }
+    this.product_srvc.cartData.subscribe((items) => {
+      this.cartItems = items.length; //length is directly sent to cartItems
+    })
   }
 
   sellerLogout() {
